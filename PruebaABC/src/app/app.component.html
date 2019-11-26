@@ -1,0 +1,32 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div>
+
+  <button (click)="getUsers()" class="danger">get</button>
+
+</div>
+
+<table class="table table-bordered">
+
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td scope="row">{{user.id}}</td>
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.correo}}</td>
+        <td>{{user.telefono}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <div>
+
+    <button (click)="saveUser()" class="danger">save</button>
+
+  </div>
+  <div>
+
+    <button (click)="deleteUser()" class="danger">delete</button>
+
+  </div>
+
+<router-outlet></router-outlet>
